@@ -22,13 +22,19 @@ Original store sales data was created by Claude AI
   Star Corner Tables: Employees - Locations - Products
 
 #### Center Table Details:
-  Transactions Columns: Transaction ID - Date - Time - Shift - Transaction Type - Branch ID - Employee ID - SKU - 
-  Quantity - Unit Cost - Unit Retail Price - Date(Year) - Date(Quarter) - Date(Month Index) - Date(Month)
+  Transactions Columns: 
+    Transaction ID - Date - Time - Shift - Transaction Type - Branch ID - Employee ID - SKU - 
+    Quantity - Unit Cost - Unit Retail Price - Date(Year) - Date(Quarter) - Date(Month Index) - Date(Month)
 
 #### Corner Tables Details:
-  Employees Columns: Shift - Branch ID - Employee ID - Employee Name
-  Locations Columns: Branch ID - Branch Name - City - Country
-  Products Columns: SKU - Category - Product Name - Color - Size
+  Employees Columns: 
+    Shift - Branch ID - Employee ID - Employee Name
+    
+  Locations Columns: 
+    Branch ID - Branch Name - City - Country
+    
+  Products Columns: 
+    SKU - Category - Product Name - Color - Size
 
 ### Inventory Calculation:
   Inventory calculated automatically from the transactions ledger [Units Received - Units Sold + Units Returned]
@@ -61,9 +67,12 @@ Original store sales data was created by Claude AI
   
   Inventory is slice-able by store branch, product category, product name, product color, and product size
 
-### Project Structure
+### Project Structure:
+
   ├── Store_Inventory_RawData.xlsx              ← Raw dataset created by Claude AI
+
   ├── Store_Inventory_Dashboard.xlsx            ← Excel Dashboard created from dataset
+  
         Sheets inside dashboard file:
           ├── Inventory_Log [hidden]             ← Raw dataset
           ├── PriceList [hidden]                 ← Price list sheet for products, containing 'product SKU + Branch' key
