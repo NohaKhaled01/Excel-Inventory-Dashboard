@@ -50,10 +50,15 @@ Original store sales data was created by Claude AI
 
 ### Ease of Use:
   Employees/Sheet users log transactions into the main ledger, and the dashboard and inventory gets automatically updated
+  
   Columns input by users:
+  
     Transaction Type - Employee ID - SKU - Quantity
+    
   Number of columns edited or logged into by users was kept to a minimal, to minimize human errors as much as possible
+  
   Charts in dashboard are slice-able by store branch, product category, and date
+  
   Inventory is slice-able by store branch, product category, product name, product color, and product size
 
 ### Project Structure
